@@ -1,0 +1,21 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# uv
+.python-version
+
+# dbt generated files
+target/
+dbt_packages/
+logs/
+
+# DuckDB database files
+*.duckdb
+*.duckdb.wal
+
+# Secrets
+.env
+profiles.yml
+*.json
