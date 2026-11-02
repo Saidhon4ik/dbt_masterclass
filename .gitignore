@@ -2,14 +2,12 @@
 .venv/
 __pycache__/
 *.py[cod]
-
-# uv
-.python-version
+*.pyc
 
 # dbt generated files
-target/
-dbt_packages/
-logs/
+**/target/
+**/dbt_packages/
+**/logs/
 
 # DuckDB database files
 *.duckdb
@@ -17,5 +15,9 @@ logs/
 
 # Secrets
 .env
+.env.*
+!.env.example
 profiles.yml
-*.json
+
+# Local editor settings
+.vscode/
