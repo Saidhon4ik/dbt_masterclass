@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: int_payments_enriched
+    columns:
+      - name: payment_id
+        data_tests:
+          - unique
+          - not_null
+
+      - name: order_id
+        data_tests:
+          - not_null
+
+      - name: customer_id
+        data_tests:
+          - not_null

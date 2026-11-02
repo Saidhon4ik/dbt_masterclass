@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: mart_sales_performance
+    columns:
+      - name: customer_city
+        data_tests:
+          - unique
+          - not_null
+
+      - name: total_orders
+        data_tests:
+          - not_null
+
+      - name: total_revenue
+        data_tests:
+          - not_null
+
+      - name: total_quantity
+        data_tests:
+          - not_null
