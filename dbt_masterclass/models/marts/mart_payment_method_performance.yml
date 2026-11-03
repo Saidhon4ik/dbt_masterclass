@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: mart_payment_method_performance
+    description: "Payment method performance metrics aggregated by payment method."
+  
+    columns:      
+      - name: payment_method
+        description: "The payment method used for transactions."
+        data_tests:
+          - unique
+          - not_null
+
+      - name: total_payments
+        description: "Total number of payments made using each payment method."
+        data_tests:
+          - not_null
+
+      - name: total_transaction_fees
+        description: "Total transaction fees incurred for each payment method."
+        data_tests:
+          - not_null
