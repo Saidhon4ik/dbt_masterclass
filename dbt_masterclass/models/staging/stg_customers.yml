@@ -2,8 +2,11 @@ version: 2
 
 models:
   - name: stg_customers
+    description: "Cleaned customer data from the raw ecommerce source."
+
     columns:
       - name: id
+        description: "Unique identifier for each customer."
         data_tests:
           - unique
           - not_null

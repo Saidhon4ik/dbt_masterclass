@@ -2,13 +2,17 @@ version: 2
 
 models:
   - name: stg_orders
+    description: "Cleaned order data from the raw ecommerce source."
+
     columns:
       - name: id
+        description: "Unique identifier for each order."
         data_tests:
           - unique
           - not_null
 
       - name: customer_id
+        description: "Identifier of the customer who placed the order."
         data_tests:
           - relationships:
               arguments:

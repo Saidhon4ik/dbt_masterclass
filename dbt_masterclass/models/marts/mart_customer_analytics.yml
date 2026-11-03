@@ -2,28 +2,36 @@ version: 2
 
 models:
   - name: mart_customer_analytics
+    description: "Customer-level analytics containing purchasing activity and spending metrics."
+
     columns:
       - name: customer_id
+        description: "Unique identifier for each customer."
         data_tests:
           - unique
           - not_null
 
       - name: customer_name
+        description: "Full name of the customer."
         data_tests:
           - not_null
 
       - name: customer_city
+        description: "City associated with the customer. Missing values are labeled Unknown."
         data_tests:
           - not_null
 
       - name: total_spent
+        description: "Total amount spent by the customer across their orders."
         data_tests:
           - not_null
 
       - name: total_orders
+        description: "Total number of orders placed by the customer."
         data_tests:
           - not_null
 
       - name: avg_order_value
+        description: "Average order value calculated for the customer."
         data_tests:
           - not_null

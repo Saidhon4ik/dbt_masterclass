@@ -2,20 +2,26 @@ version: 2
 
 models:
   - name: mart_sales_performance
+    description: "Sales performance metrics aggregated by customer city."
+
     columns:
       - name: customer_city
+        description: "City associated with the customer. Missing values are labeled Unknown."
         data_tests:
           - unique
           - not_null
 
       - name: total_orders
+        description: "Total number of orders placed by customers in the city."
         data_tests:
           - not_null
 
       - name: total_revenue
+        description: "Sum of order amounts for customers in the city."
         data_tests:
           - not_null
 
       - name: total_quantity
+        description: "Total quantity of items ordered by customers in the city."
         data_tests:
           - not_null

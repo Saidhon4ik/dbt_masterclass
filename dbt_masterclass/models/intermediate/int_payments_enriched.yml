@@ -2,16 +2,21 @@ version: 2
 
 models:
   - name: int_payments_enriched
+    description: "Payment transactions enriched with related order and customer information."
+
     columns:
       - name: payment_id
+        description: "Unique identifier for each payment."
         data_tests:
           - unique
           - not_null
 
       - name: order_id
+        description: "Identifier of the order associated with the payment."
         data_tests:
           - not_null
 
       - name: customer_id
+        description: "Identifier of the customer associated with the payment."
         data_tests:
           - not_null

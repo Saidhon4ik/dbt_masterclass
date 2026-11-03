@@ -4,4 +4,4 @@ full_name,
 email,
 registration_date,
 city
-from {{ref('customers')}}
+from {{ source('ecommerce', 'customers') }}

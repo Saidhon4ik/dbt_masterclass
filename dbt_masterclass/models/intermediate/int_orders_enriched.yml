@@ -2,12 +2,16 @@ version: 2
 
 models:
   - name: int_orders_enriched
+    description: "Order data enriched with customer information."
+
     columns:
       - name: order_id
+        description: "Unique identifier for each order."
         data_tests:
           - unique
           - not_null
 
       - name: customer_id
+        description: "Identifier of the customer associated with the order."
         data_tests:
           - not_null
