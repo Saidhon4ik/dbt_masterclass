@@ -1,9 +1,13 @@
 version: 2
 
 sources:
-  - name: ecommerce     #logical SOURCE 
-    schema: raw         #schema
+  - name: ecommerce     #logical source name
+    schema: raw         #physical schema in the database
     tables:
       - name: customers
       - name: orders
       - name: payments
+  - name: crm_system
+    schema: crm
+    tables:
+      - name: contacts

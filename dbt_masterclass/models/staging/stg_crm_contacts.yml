@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: stg_crm_contacts
+    description: "Cleaned contact data from the raw CRM source."
+
+    columns:
+      - name: contact_id
+        description: "Unique identifier for each contact."
+        data_tests:
+          - unique
+          - not_null
+      
+      - name: contact_name
+        description: "Full name of the contact."
+        data_tests:
+          - not_null
+       
+      - name: email
+        description: "Email address of the contact."
+        data_tests:
+          - not_null
+      - name: city
+        description: "City of the contact."
+        data_tests:
+          - not_null
