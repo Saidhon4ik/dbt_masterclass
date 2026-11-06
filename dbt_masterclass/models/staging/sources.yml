@@ -1,13 +1,19 @@
 version: 2
 
 sources:
-  - name: ecommerce     #logical source name
-    schema: raw         #physical schema in the database
+  - name: ecommerce
+    schema: raw
     tables:
       - name: customers
       - name: orders
       - name: payments
+
   - name: crm_system
     schema: crm
     tables:
       - name: contacts
+
+  - name: incremental_practice
+    schema: incremental_practice
+    tables:
+      - name: incremental_orders
