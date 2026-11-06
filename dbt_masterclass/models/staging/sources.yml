@@ -17,3 +17,8 @@ sources:
     schema: incremental_practice
     tables:
       - name: incremental_orders
+
+  - name: snapshot_practice
+    schema: snapshot_practice
+    tables: 
+      - name: customers
